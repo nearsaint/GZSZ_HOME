@@ -28,10 +28,8 @@ var nav_main = new Vue({
     navDropdown() {
       if (this.nav_dropdown) {
         this.nav_dropdown = false;
-        $('body').removeClass('overflowHiden');
       } else {
         this.nav_dropdown = true;
-        $('body').addClass('overflowHiden');
       }
     } //end navDropdown
   },

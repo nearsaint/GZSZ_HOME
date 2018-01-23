@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*
+ * name: 'product.scss';
+ * author: 'NearSaint';
+ * time: '2018.0111';
+ */
+@import "_variable";
+@import "_mixin";
+
+section.product00{
+  padding-bottom: 60px;
+  >div.container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  img{
+    width: 800px;
+    height: auto;
+    margin: 40px auto 60px;
+    display:block;
+  }
+  hr{
+    margin: 40px auto;
+  }
+  h2{
+    margin-bottom: 40px;
+    font-weight: 600;
+    &.orange{
+      color: $color_mainorange;
+    }
+    &.blue{
+      color: $color_mainblue;
+    }
+  }
+  h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  h4{
+    margin-top: 40px;
+    font-weight: 600;
+  }
+  h5{
+    font-size: 16px;
+    line-height: 1.8em;
+    margin: 10px auto;
+    color: #999;
+  }
+  div.next{
+    >a.blue{
+      font-size: 18px;
+      @include btn($height:42px,$bg:$color_mainblue,$hover_bg:$color_mainblue_deep,$padding:0 60px);
+    }
+    >a.orange{
+      @include btn($height:42px,$bg:$color_mainorange,$hover_bg:$color_mainorange_deep,$padding:0 60px);
+    }
+  }
+}
+//end .team
+@media (max-width: 992px)
+{
+
+}
+
+@media (max-width: 768px)
+{
+
+}

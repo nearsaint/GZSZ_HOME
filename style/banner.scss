@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*
+ * name: 'banner.scss';
+ * author: 'NearSaint';
+ * time: '2018.0115';
+ */
+@import "_variable";
+@import "_mixin";
+
+section.banner{
+  position: relative;
+  overflow: hidden;
+  @include square(100%,100%);
+  @include background-image(url(../image/banner/banner.jpg),$size:cover);
+  >div.container{
+    $logo_square: 680px !default;
+    position: relative;
+    z-index: 5;
+    @include square(100%,100%);
+    div.logo{
+      @include square($logo_square,$logo_square);
+      @include position(50%,50%,$z-index:2);
+      margin-left: -$logo_square/2;
+      margin-top: -$logo_square/2;
+      >div.itembox{
+        @include square(100%,100%);
+        @include background-image();
+        @include position(0,0,0,0);
+        @for $i from 1 through 46{
+          &.item#{$i}{
+            background-image: url(../image/banner/logo/0#{$i}.png);
+          }
+        }
+      }
+    }
+    // end .logo
+    div.logoall{
+      @include position(50%,50%,$z-index:2);
+      @include square($logo_square,$logo_square);
+      margin-left: -$logo_square/2;
+      margin-top: -$logo_square/2;
+      @include background-image(url(../image/banner/logo/logoall.png));
+      @media (max-width: 768px){
+        background-image: url(../image/banner/logo/logoall2.png)
+      }
+    }
+    // end .logoall
+
+    i.icon-down{
+      display: block;
+      margin-left: -11.5px;
+      @include position($bottom:40px,$left: 50%);
+      @include background-image(url(../image/index/arr_bottom.png));
+      @include square(40px,30px);
+    }
+
+    @media (max-width: 992px)
+    {
+      $logo_square: 580px;
+       div.logo{
+        @include square($logo_square,$logo_square);
+        margin-left: -$logo_square/2;
+        margin-top: -$logo_square/2;
+      }
+      // end .logo
+      div.logoall{
+        @include square($logo_square,$logo_square);
+        margin-left: -$logo_square/2;
+        margin-top: -$logo_square/2;
+      }
+      // end .logoall
+    }
+    @media (max-width: 768px)
+    {
+      $logo_square: 520px;
+       div.logo{
+        @include square($logo_square,$logo_square);
+        margin-left: -$logo_square/2;
+        margin-top: -$logo_square/2;
+      }
+      // end .logo
+      div.logoall{
+        @include square($logo_square,$logo_square);
+        margin-left: -$logo_square/2;
+        margin-top: -$logo_square/2;
+      }
+      // end .logoall
+    }
+  }
+  //end .container
+  >.mask{
+    @include position(0,0,0,$z-index:0);
+    @include square(100%,100%);
+    @include linear-gradient($color_mainblue,$color_mainorange);
+    @include opacity(0.48);
+  }
+
+  >.bg{
+    @include square(100%,100%);
+    @include position(0,0,0,$z-index:1);
+    background-color: rgba(0,0,0,0.4);
+  }
+  &.contentBanner{
+    height: 260px;
+    >div.container{
+      padding-top: 80px;
+      >div.container{
+        text-align: center;
+        color: #fff;
+        >h3{
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    >.mask{
+      @include opacity(0.68);
+    }
+  }
+}//end banner

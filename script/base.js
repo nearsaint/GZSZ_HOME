@@ -15,11 +15,6 @@ $(document).on('touchend', 'a', function() {
 });
 
 /*
- *  wow - the animate in the all page;
- */
-new WOW().init();
-
-/*
  *  document Ready
  */
 $(document).ready(function() {});

@@ -18,7 +18,7 @@ $nav_main-btnBars_square: 40px;
 //end variable
 header.header
 {
-    @include position;
+    @include position($z-index: 99);
     width: 100%;
     nav.nav_main
     {
@@ -79,7 +79,7 @@ header.header
             position: relative;
             >a{
               font-size: 16px;
-              padding: 0 15px;
+              padding: 0 20px;
               display: block;
               height: 100%;
               color: #fff;
@@ -95,18 +95,21 @@ header.header
               }
             }
             >div.tiper{
+              display: none;
               @include position(100%,$right:0);
               @include radius;
+              @include box-shadow(0 0 3px #ccc);
               background-color: rgba(255,255,255,0.9);
               color: #444;
-              display: none;
               padding: 10px 15px;
               white-space: nowrap;
               text-align: center;
               line-height: 1.8em;
+
               img{
                 width: 166px;
                 height: 166px;
+                max-width: 166px;
                 margin-bottom: 5px;
               }
               h5{
@@ -119,7 +122,7 @@ header.header
                 border-left: 10px solid transparent;
                 border-top: 10px solid transparent;
                 border-right: 10px solid transparent;
-                @include position(-20px,$right:26px);
+                @include position(-20px,$right:31px);
               }
             }
             &:hover{
@@ -197,7 +200,7 @@ header.header
           @include position(0,0,$position: fixed);
           @include square($nav_main-height_fixed,100%);
           background-color: rgba(255,255,255,.96);
-
+          border-bottom: 1px #ddd solid;
           .logo
           {
             @include background-image(url(../image/logo/logo-onlyEn@3x.png));
@@ -242,7 +245,7 @@ header.header
                 border-top: 2px solid $color_mainblue;
                 b{
                   border-bottom-color: $color_mainblue;
-                  right: 21px;
+                  right: 26px;
                 }
               }
               &:hover{

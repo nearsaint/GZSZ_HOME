@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*
+ * name: 'footer.scss';
+ * author: 'NearSaint';
+ * time: '2018.0111';
+ */
+@import "_variable";
+@import "_mixin";
+
+footer.footer{
+  background-color: #222;
+  width: 100%;
+  color: #fff;
+  >div.container{
+    padding: 40px 15px;
+    >div.logo{
+      float: left;
+      margin-right: 60px;
+      margin-top: 20px;
+      @include square(100px,200px);
+      @include background-image(url(../image/logo/logo-en&cn&icon&tach-w@3x.png));
+      @media (max-width: 768px)
+      {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+    >ul{
+      float: left;
+      margin-right: 40px;
+      margin-top: 20px;
+      >h3{
+        margin-bottom: 20px;
+      }
+      >li>a{
+        font-size: 16px;
+        color: #ccc;
+        line-height: 2em;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+    >div.qr{
+      float: right;
+      text-align: center;
+      >img{
+        @include square(100px,100px);
+        margin-bottom: 10px;
+      }
+      h5{
+        line-height: 1.5em;
+      }
+
+      @media (max-width: 768px)
+      {
+        float: none;
+        width: 100%;
+        >img{
+          @include square(150px,150px);
+        }
+      }
+    }
+  }
+  >div.copyright{
+    background-color: #000;
+    color: #999;
+    border-top: 1px solid #333;
+    h5{
+      line-height: 52px;
+      font-size: 14px;
+      >br{
+        display: none;
+
+      }
+      @media (max-width: 768px)
+      {
+        text-align: center;
+        padding: 10px 0;
+        line-height:1.5em;
+        >br{
+           display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px)
+{
+
+}
+
+@media (max-width: 768px)
+{
+
+}

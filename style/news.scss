@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+/*
+ * name: 'news.scss';
+ * author: 'NearSaint';
+ * time: '2018.0111';
+ */
+@import '_variable';
+@import '_mixin';
+
+section.newsList{
+  background-color: #f5f5f5;
+  padding-bottom: 60px;
+  ul{
+    li{
+      margin: 20px auto;
+      a{
+        display: block;
+        @include square(auto,100%);
+        @include clear;
+        background-color: #fff;
+        padding: 40px ;
+        @include radius;
+        >img{
+          float: left;
+          width: 200px;
+          height: 60px;
+          background-color: #ccc;
+        }
+        >h3{
+          font-size: 28px;
+          margin-bottom: 20px;
+          color: #333;
+          margin-left: 240px;
+        }
+        >h5{
+          font-size: 14px;
+          color: #999;
+          margin-left: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px)
+{
+}
+
+@media (max-width: 768px)
+{
+}

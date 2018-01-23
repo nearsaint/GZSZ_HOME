@@ -178,9 +178,6 @@ ol
 .clear
 {
     clear: both !important;
-
-    width: 100% !important;
-    height: 0 !important;
 }
 
 .clr:after,
@@ -190,7 +187,7 @@ ol
     visibility: hidden;
     clear: both;
 
-    height: 0;
+    height: 0 !important;
 
     content: '.';
 }

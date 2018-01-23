@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*
+ * name: 'style.scss';
+ * author: 'NearSaint';
+ * time: '2018.0111';
+ */
+@import "_variable";
+@import "_mixin";
+
+section.about{
+  background-color: #333;
+  padding-bottom: 60px;
+  color: #fff;
+  >div.container{
+    position: relative;
+  }
+  h5{
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+  div.img{
+    @include position(0,$right:0);
+    margin-top: -60px;
+    @include square(calc(100% + 120px),600px);
+    @include background-image(url(../image/index/about02@3x.png),$size:cover);
+    >i{
+      @include position(50%,50%);
+      margin-left: -155px;
+      margin-top: -105px;
+      @include square(210px,310px);
+      @include background-image(url(../image/index/about01@3x.png));
+    }
+  }
+}
+
+
+section.productNservice{
+  padding-bottom: 60px;
+  div.content{
+    >hr{
+      margin: 60px 0;
+    }
+    h3{
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    h5{
+      font-size: 16px;
+      line-height: 1.8em;
+    }
+    img{
+      display: block;
+      margin: 40px auto;
+      max-width: 580px;
+    }
+    a.bt{
+      color: #fff;
+      margin-top: 40px;
+      @include btn(42px,$bg:$color_mainorange,$hover_bg:$color_mainorange_deep,$padding: 0 40px);
+    }
+    >.yellow{
+      h3{
+        color: $color_mainorange;
+      }
+      a.bt{
+        @include btn($bg:$color_mainorange,$hover_bg:$color_mainorange_deep);
+      }
+    }
+    >.blue{
+      text-align: right;
+      h3{
+        color: $color_mainblue;
+      }
+      a.bt{
+        @include btn($bg:$color_mainblue, $hover_bg:$color_mainblue_deep);
+      }
+    }
+  }
+}
+// end .productNservice
+
+section.team{
+  border-top: 1px solid #ddd;
+  padding: 60px 0;
+  ul{
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    >li{
+      @include square(150px,33.3333%);
+      padding: 20px 20px;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      float: left;
+      >a{
+        display: block;
+        @include square(100%,100%);
+        @include background-image;
+        @include grayscale;
+        &:hover,
+        &.touch{
+          @include grayscale(0);
+        }
+      }
+      &.siemens>a{
+        background-image: url(../image/index/team/siemens.jpeg)
+      }
+
+      @media (max-width: 768px)
+      {
+        @include square(120px,50%);
+      }
+    }
+  }
+}
+//end .team
+
+.upNdown{
+  @include animation(upNdown 2s infinite);
+}
+
+@keyframes upNdown
+{
+0% {bottom:50px;}
+50% {bottom:40px;}
+100% {bottom:50px;}
+}
+
+@-webkit-keyframes upNdown /*Safari and Chrome*/
+{
+0% {bottom:50px;}
+50% {bottom:40px;}
+100% {bottom:50px;}
+}
+
+@media (max-width: 992px)
+{
+
+}
+
+@media (max-width: 768px)
+{
+
+}
