@@ -37,9 +37,11 @@
 	<!-- banner -->
 	<link href="../style/banner.css" rel="stylesheet">
 	<!-- about -->
-	<link href="../style/about.css" rel="stylesheet">
+	<link href="../style/join.css" rel="stylesheet">
 	<!-- sticky -->
 	<link href="../style/ui/uikit/components/sticky.min.css" rel="stylesheet">
+	<!-- accordion -->
+	<link href="../style/ui/uikit/components/accordion.min.css" rel="stylesheet">
 
 </head>
 
@@ -57,8 +59,8 @@
 					<li><a href="../index.html#productNservice" v-on:click="closeNavDropdown">产品与服务</a></li>
 					<!-- <li><a href="news.html">盛智新闻</a></li> -->
 					<li><a href="../index.html#team" v-on:click="closeNavDropdown">合作伙伴</a></li>
-					<li class="active"><a href="about.html">关于我们</a></li>
-					<li><a href="join.html">招贤纳士</a></li>
+					<li><a href="about.html">关于我们</a></li>
+					<li class="active"><a href="join.html">招贤纳士</a></li>
 					<li class="hidden-sm hidden-xs">
 						<a><i class="fa fa-qrcode" aria-hidden="true"></i></a>
 						<div class="tiper animated fadeIn">
@@ -83,8 +85,8 @@
 	<section class="banner contentBanner">
 		<div class="container">
 			<div class="container">
-				<h3>关于我们</h3>
-				<h4>ABOUT US</h4>
+				<h3>招贤纳士</h3>
+				<h4>JOIN US</h4>
 			</div>
 		</div>
 		<!-- end .container -->
@@ -94,45 +96,126 @@
 	</section>
 	<!-- end .banner -->
 	<main class="main">
-		<section class="aboutus">
+		<section class="joinus">
 			<div class="container">
-				<div class="slideMenu hidden-xs" data-uk-sticky="{top:60}">
+				<!-- <div class="slideMenu hidden-xs" data-uk-sticky="{top:60}">
 					<ul>
 						<li class="active"><a href="#about01" data-uk-smooth-scroll="{offset: 120}">公司简介</a></li>
 						<li class=""><a href="#about02" data-uk-smooth-scroll="{offset: 120}">企业愿景</a></li>
 						<li class=""><a href="#about03" data-uk-smooth-scroll="{offset: 120}">核心竞争力</a></li>
 						<li class=""><a href="#about04" data-uk-smooth-scroll="{offset: 120}">联系我们</a></li>
 					</ul>
+				</div> -->
+				<div class="uk-accordion" data-uk-accordion>
+
+					<h3 class="uk-accordion-title title">
+						工业4.0高级咨询顾问
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</h3>
+					<div class="uk-accordion-content content">
+						<h3>职位的目标:</h3>
+						<h5>为公司业务作市场宣传，提升公司的行业影响力。<br>
+为潜在客户提供解决方案的策划咨询， 用工业4.0平台技术为用户创造价值。 </h5>
+
+						<h3>职位的责任:</h3>
+						<h6>• 负责公司市场推广活动。</h6>
+						<h6>• 负责为客户项目提供前期的的方案咨询。</h6>
+						<h5>• 负责整合公司合作伙伴，供应商的技术方案， 形成有竞争性， 为客户创造价值的平台技术和解决方案。</h5>
+
+						<h3>职位的要求条件:</h3>
+						<h6>• 理工本科及以上学历。</h6>
+						<h6>• 工业领域十年以上从业经验，担任过管理职位。</h6>
+						<h6>• 了解工业4.0 的前沿知识。 </h6>
+						<h6>• 良好的沟通表达能力及人际交往技巧。 </h6>
+						<h6>• 创新意识。</h6>
+						<h6>• 掌握MS Office文件制作技巧。 </h6>
+						<h6>• 英语流利者优先。</h6>
+					</div>
+
+					<h3 class="uk-accordion-title title">
+											软件开发高级工程师
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</h3>
+					<div class="uk-accordion-content content">
+						<h3>职位的目标:</h3>
+						<h5>公司平台技术的开发 </h5>
+
+						<h3>职位的责任:</h3>
+						<h5>•	负责系统软件的结构设计， 软件编程， 测试等 。</h5>
+
+						<h3>职位的要求条件:</h3>
+						<h6>•	计算机软件本科以上学历。 </h6>
+						<h6>•	五年以上计算机软件开发从业经验。</h6>
+						<h6>•	精通C语言等程序及开发环境。</h6>
+						<h6>•	掌握数据库管理软件。</h6>
+						<h6>•	掌握物联网技术或工业互联网技术优先。</h6>
+					</div>
+
+					<h3 class="uk-accordion-title title">
+						工业自动化工程师
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</h3>
+					<div class="uk-accordion-content content">
+						<h3>职位的目标:</h3>
+						<h5>公司平台技术的开发 </h5>
+
+						<h3>职位的责任:</h3>
+						<h6>• 负责PLC自动化系统的架构设计，选型，软件编程，通信等 。</h6>
+						<h5>• 负责项目技术方案及报价，项目实施。</h5>
+
+						<h3>职位的要求条件:</h3>
+						<h6>•	理工科本科及以上学历。 </h6>
+						<h6>•	工业自动化领域五年以上从业经验。</h6>
+						<h6>•	精通PLC及其编程。</h6>
+						<h6>•	掌握工业自动化系统， 工业通讯网络。</h6>
+						<h6>•	掌握数据库管理软件。</h6>
+						<h6>•	了解工业4.0知识。</h6>
+					</div>
+
+					<h3 class="uk-accordion-title title">
+						光伏电站运维平台开发高级工程师
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</h3>
+					<div class="uk-accordion-content content">
+						<h3>职位的目标:</h3>
+						<h5>公司平台技术的开发 </h5>
+
+						<h3>职位的责任:</h3>
+						<h6>• 负责大型光伏电站运维平台软件的开发。</h6>
+						<h5>•	负责系统结构设计， 软件编程， 测试等 。</h5>
+
+						<h3>职位的要求条件:</h3>
+						<h6>•	计算机软件本科以上学历。 </h6>
+						<h6>•	五年以上计算机软件开发从业经验。</h6>
+						<h6>•	精通C语言等程序及开发环境。</h6>
+						<h6>•	掌握数据库管理软件。</h6>
+						<h6>•	掌握物联网技术应用。</h6>
+						<h6>•	电力SCADA 系统开发经验。</h6>
+					</div>
+
+					<h3 class="uk-accordion-title title">
+						后台开发工程师
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</h3>
+					<div class="uk-accordion-content content">
+						<h3>职位的目标:</h3>
+						<h5>公司平台技术的开发 </h5>
+
+						<h3>职位的责任:</h3>
+						<h6>•	负责Web服务器的架构设计、实现、测试、部署与运维工作。</h6>
+						<h6>•	负责实现Web应用的服务器端逻辑；负责数据库结构的设计和优化 。</h6>
+						<h5>•	负责与产品开发相关人员沟通、设计和实现Web产品的新功能 。</h5>
+
+						<h3>职位的要求条件:</h3>
+						<h6>•	本科及以上学历，计算机类相关专业。</h6>
+						<h6>•	至少掌握一门Web编程语言，熟悉Java，具备独自负责项目模块开发的能力者优先考虑。</h6>
+						<h6>•	掌握Web后端开发技术：协议、架构、存储、缓存、安全等；熟悉Spring MVC、MyBatis、Hibernate、Apache Tocmat、Struct2等开发框架，并具备相关的开发经验。</h6>
+						<h6>•	熟悉关系型数据库MSSQL、MySQL等的使用，精通SQL语言。</h6>
+						<h6>•	熟悉Redis缓存数据库的使用；熟悉分布式系统的设计和应用；熟悉分布式、缓存、消息等机制者优先。</h6>
+						<h6>•	良好的编程风格、沟通能力和团队合作精神，有责任感、忠诚度高，能适应加班。</h6>
+					</div>
+
 				</div>
-				<h3 id="about01">公司简介</h3>
-				<h5>广州盛智技术有限公司的业务为工业 4.0 的技术开发及应用。<br class="hidden-xs">
-						面向工业用户的智能制造，工业大数据，云计算，人工智能的应用领域。<br class="hidden-xs">
-						用物联网技术与工业流程及价值链融合，<br class="hidden-xs">
-						打造工业4.0时代的产品定制，生产，管理，运营，服务的平台。<br>
-						<br>
-						公司拥有融合工业自动化，数字化，互联网等跨学科复合型人才。<br class="hidden-xs">
-						公司与国内和国际上从事工业4.0和工业互联网的创新企业，技术研发机构开展广泛合作，<br class="hidden-xs">
-						为中国工业智造提供平台解决方案。
-				</h5>
-				<hr>
-				<h3 id="about02">企业愿景</h3>
-				<h5>智能制造解决方案专业提供商，工业大数据管理及应用的专业服务商。<br class="hidden-xs">
-						中国智能制造行业数字化解决方案的领先者。
-				</h5>
-				<hr>
-				<h3 id="about03">核心竞争力</h3>
-				<h5>技术创新，客户价值，理念前瞻，跨界融合，国际视野，中国速度。
-				</h5>
-				<hr>
-				<h3 id="about04">联系我们</h3>
-				<a class="addmap" href="https://j.map.baidu.com/9PBfO" target="_blank"><img src="../image/public/addmap.jpg" alt="百度地图截图"></a>
-				<h5>地址 : 广东省广州市珠江新城富力盈泰广场B座502室 <a href="https://j.map.baidu.com/9PBfO" target="_blank">[跳转至百度地图]</a> ;<br>
-						电话 : (86) 020-38798879 ; <br>
-						QQ : 1578700174 ;<br>
-						邮箱 : sztech@sencond.com‍
-				</h5>
-				<img class="qrcode" src="../image/public/qrcode.jpg" alt="微信公众号">
-				<h5>扫一扫关注微信公众号<br>盛智技术</h5>
 			</div>
 		</section>
 	</main>
@@ -182,18 +265,11 @@
 	<script src="../script/nav.js " type="text/javascript "></script>
 	<!-- nav -->
 	<script src="../script/ui/uikit/components/sticky.min.js " type="text/javascript "></script>
+	<script src="../script/ui/uikit/components/accordion.min.js " type="text/javascript "></script>
 
 	<!-- JavaScript for index -->
 
 	<script type="text/javascript ">
-		$(document).ready(function() {
-			new WOW().init();
-			setTimeout(
-				function() {
-					$('section.banner>div>.logo').remove();
-				}, 4300);
-
-		});
 		$(window).scroll(function() {
 			console.log($(document).scrollTop());
 			if ($(document).scrollTop() < 585) {

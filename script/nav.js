@@ -31,7 +31,12 @@ var nav_main = new Vue({
       } else {
         this.nav_dropdown = true;
       }
-    } //end navDropdown
+    }, //end navDropdown
+    closeNavDropdown() {
+      if (this.nav_dropdown) {
+        this.nav_dropdown = false;
+      }
+    } //end closeNavDropdown
   },
   mounted() {
     window.addEventListener('scroll', this.navScroll);
