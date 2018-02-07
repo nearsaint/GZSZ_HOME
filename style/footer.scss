@@ -76,6 +76,12 @@ footer.footer{
         display: none;
 
       }
+      >a{
+        color: #999;
+        &:hover{
+          color: $color_mainblue;
+        }
+      }
       @media (max-width: 768px)
       {
         text-align: center;
